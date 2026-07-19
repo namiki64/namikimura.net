@@ -65,6 +65,9 @@ body {
 
 .profile .content-links {
   margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .profile .content-links a {
@@ -130,6 +133,18 @@ body {
 .timeline-body p {
   margin: 0 0 0.75rem;
   line-height: 1.7;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: #3ea8ff;
+}
+
+.timeline-body code {
+  background-color: #f0f0f0;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
 }
 
 .timeline-image {
