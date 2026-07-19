@@ -29,12 +29,27 @@ body {
   color: #555;
 }
 
-.profile .x-link {
-  color: #1d9bf0;
+.profile .links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.profile .x-link,
+.profile .zenn-link {
   text-decoration: none;
   font-weight: 500;
 }
 
-.profile .x-link:hover {
+.profile .x-link {
+  color: #1d9bf0;
+}
+
+.profile .zenn-link {
+  color: #3ea8ff;
+}
+
+.profile .x-link:hover,
+.profile .zenn-link:hover {
   text-decoration: underline;
 }
