@@ -140,6 +140,44 @@ body {
   color: #3ea8ff;
 }
 
+.timeline-item--job::before {
+  width: 14px;
+  height: 14px;
+  left: -8px;
+  background-color: #1d6fd1;
+}
+
+.timeline-title--job {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1d6fd1;
+}
+
+.timeline-title--job .fa-building {
+  margin-right: 0.3rem;
+}
+
+.timeline-item--talk::before {
+  width: 10px;
+  height: 10px;
+  left: -6px;
+  background-color: #3ea8ff;
+}
+
+.timeline-title--talk {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #3ea8ff;
+}
+
+.timeline-title--talk a {
+  color: inherit;
+}
+
+.timeline-title--talk .fa-microphone-lines {
+  margin-right: 0.3rem;
+}
+
 .timeline-item--minor::before {
   width: 8px;
   height: 8px;
