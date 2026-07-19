@@ -18,10 +18,11 @@ body {
   padding: 2rem;
 }
 
-.profile h1 {
+.profile h1.site-title {
   margin: 0 0 0.5rem;
+  font-family: "Michroma", sans-serif;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .profile .role {
