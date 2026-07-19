@@ -140,6 +140,23 @@ body {
   color: #3ea8ff;
 }
 
+.timeline-item--minor::before {
+  width: 8px;
+  height: 8px;
+  left: -5px;
+  background-color: #ccc;
+}
+
+.timeline-item--minor {
+  padding-bottom: 1.5rem;
+}
+
+.timeline-title--minor {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #888;
+}
+
 .timeline-body code {
   background-color: #f0f0f0;
   padding: 0.1rem 0.4rem;
