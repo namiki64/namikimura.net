@@ -96,21 +96,21 @@ body {
 }
 
 .profile .x-link,
-.profile .zenn-link {
+.profile .zenn-link,
+.profile .connpass-link {
   text-decoration: none;
   font-weight: 500;
 }
 
-.profile .x-link {
-  color: #1d9bf0;
-}
-
-.profile .zenn-link {
+.profile .x-link,
+.profile .zenn-link,
+.profile .connpass-link {
   color: #3ea8ff;
 }
 
 .profile .x-link:hover,
-.profile .zenn-link:hover {
+.profile .zenn-link:hover,
+.profile .connpass-link:hover {
   text-decoration: underline;
 }
 
