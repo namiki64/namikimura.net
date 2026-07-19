@@ -194,6 +194,15 @@ body {
   padding-bottom: 0;
 }
 
+.timeline-item--job,
+.timeline--tight .timeline-item {
+  padding-left: 32px;
+}
+
+.timeline-item--talk {
+  padding-left: 54px;
+}
+
 .timeline-item--talk::after,
 .timeline-item--minor::after {
   content: "";
