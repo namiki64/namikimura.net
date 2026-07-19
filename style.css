@@ -161,6 +161,11 @@ body {
   color: #3ea8ff;
 }
 
+.timeline-link-icon {
+  margin-left: 0.4rem;
+  font-size: 0.85em;
+}
+
 .timeline-body code {
   background-color: #f0f0f0;
   padding: 0.1rem 0.4rem;
