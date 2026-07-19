@@ -12,6 +12,10 @@
 <body>
 <main class="profile">
   <h1 class="site-title">namikimura</h1>
+  <div class="eyes">
+    <div class="eye"><div class="eye-pupil"></div></div>
+    <div class="eye"><div class="eye-pupil"></div></div>
+  </div>
   <p class="role">インフラエンジニア 兼 SRE</p>
   <ul class="info">
     <li>香川県出身、大阪府在住</li>
@@ -28,5 +32,22 @@
     <a href="icon-history.html">アイコンの変遷</a>
   </div>
 </main>
+<script>
+  const pupils = document.querySelectorAll(".eye-pupil");
+  const eyes = document.querySelectorAll(".eye");
+  const maxOffset = 6;
+
+  document.addEventListener("pointermove", (event) => {
+    eyes.forEach((eye, i) => {
+      const rect = eye.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      const angle = Math.atan2(event.clientY - centerY, event.clientX - centerX);
+      const x = Math.cos(angle) * maxOffset;
+      const y = Math.sin(angle) * maxOffset;
+      pupils[i].style.transform = `translate(${x}px, ${y}px)`;
+    });
+  });
+</script>
 </body>
 </html>
