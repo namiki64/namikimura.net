@@ -53,6 +53,16 @@
       pupils[i].style.transform = `translate(${x}px, ${y}px)`;
     });
   });
+
+  document.querySelector(".eyes").addEventListener("click", () => {
+    pupils.forEach((pupil) => {
+      const angle = Math.random() * Math.PI * 2;
+      const radius = maxOffset * (0.9 + Math.random() * 0.1);
+      const x = Math.cos(angle) * radius;
+      const y = Math.sin(angle) * radius;
+      pupil.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  });
 </script>
 </body>
 </html>
